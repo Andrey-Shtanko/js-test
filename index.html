@@ -8,6 +8,59 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="container">
+      <h1 class="title">
+        <span class="first_part">warm</span
+        ><span class="second_part">devs</span>
+      </h1>
+      <div>
+        <button type="button" class="open__btn form__btn">Open Form</button>
+      </div>
+      <div class="backdrop is-hidden">
+        <div class="modal">
+          <button type="button" class="close-btn">X</button>
+          <h2 class="form__title">Заповніть данні для відправки</h2>
+          <form class="form" novalidate>
+            <div class="form__field">
+              <label for="name" class="form__label"
+                >User Name<input
+                  type="text"
+                  class="form__input"
+                  name="name"
+                  id="name"
+                  required
+                  minlength="2"
+              /></label>
+            </div>
+            <div class="form__field">
+              <label for="tel" class="form__label"
+                >Phone<input
+                  type="number"
+                  class="form__input"
+                  name="tel"
+                  id="tel"
+                  required
+                  minlength="2"
+              /></label>
+            </div>
+            <div class="form__field">
+              <label for="mail" class="form__label"
+                >Email<input
+                  type="mail"
+                  class="form__input"
+                  name="mail"
+                  id="mail"
+                  required
+                  minlength="2"
+              /></label>
+            </div>
+
+            <button class="form__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script src="./index.js"></script>
   </body>
 </html>
